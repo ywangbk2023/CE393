@@ -106,7 +106,7 @@ C {devices/vsource.sym} 230 -870 0 0 {name=VSource value="ac 1 sin(0 0.0001 1)" 
 C {devices/lab_pin.sym} 1310 -910 0 1 {name=p6 sig_type=std_logic lab=Vout_P}
 C {devices/lab_pin.sym} 1310 -830 0 1 {name=p7 sig_type=std_logic lab=Vout_N}
 C {devices/lab_pin.sym} 590 -1010 0 1 {name=p8 sig_type=std_logic lab=Vin_P}
-C {devices/lab_pin.sym} 590 -830 0 1 {name=p9 sig_type=std_logic lab=Vin_N}
+C {devices/lab_pin.sym} 590 -750 0 1 {name=p9 sig_type=std_logic lab=Vin_N}
 C {devices/gnd.sym} 170 -240 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 260 -240 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 170 -360 1 0 {name=p10 sig_type=std_logic lab=Vbias}

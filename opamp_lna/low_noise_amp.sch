@@ -6,21 +6,21 @@ V {}
 S {}
 E {}
 N 180 -880 180 -840 {
-lab=#net1}
+lab=A0}
 N 180 -880 520 -880 {
-lab=#net1}
+lab=A0}
 N 520 -880 520 -840 {
-lab=#net1}
+lab=A0}
 N 180 -780 180 -680 {
 lab=CMFB}
 N 520 -780 520 -680 {
-lab=#net2}
+lab=A1}
 N 220 -650 480 -650 {
-lab=#net2}
+lab=A1}
 N 330 -700 330 -650 {
-lab=#net2}
+lab=A1}
 N 330 -700 520 -700 {
-lab=#net2}
+lab=A1}
 N 520 -620 520 -580 {
 lab=VSS}
 N 180 -580 520 -580 {
@@ -32,7 +32,7 @@ lab=VSS}
 N 180 -740 660 -740 {
 lab=CMFB}
 N 350 -940 350 -880 {
-lab=#net1}
+lab=A0}
 N 1020 -780 1020 -680 {
 lab=V1N}
 N 1360 -780 1360 -680 {
@@ -42,13 +42,13 @@ lab=V1P}
 N 1020 -730 1120 -730 {
 lab=V1N}
 N 1020 -880 1020 -840 {
-lab=xxx}
+lab=B0}
 N 1020 -880 1360 -880 {
-lab=xxx}
+lab=B0}
 N 1360 -880 1360 -850 {
-lab=xxx}
+lab=B0}
 N 1360 -850 1360 -840 {
-lab=xxx}
+lab=B0}
 N 940 -650 980 -650 {
 lab=INP}
 N 940 -810 940 -650 {
@@ -56,13 +56,13 @@ lab=INP}
 N 940 -810 980 -810 {
 lab=INP}
 N 1020 -620 1020 -580 {
-lab=#net3}
+lab=B1}
 N 1020 -580 1360 -580 {
-lab=#net3}
+lab=B1}
 N 1360 -620 1360 -580 {
-lab=#net3}
+lab=B1}
 N 1190 -580 1190 -540 {
-lab=#net3}
+lab=B1}
 N 1400 -650 1440 -650 {
 lab=INN}
 N 1440 -810 1440 -650 {
@@ -74,11 +74,11 @@ lab=INN}
 N 880 -730 940 -730 {
 lab=INP}
 N 1190 -910 1190 -880 {
-lab=xxx}
+lab=B0}
 N 1190 -920 1190 -910 {
-lab=xxx}
+lab=B0}
 N 1190 -940 1190 -920 {
-lab=xxx}
+lab=B0}
 N 1190 -1060 1190 -1000 {
 lab=VDD}
 N 1190 -1030 1300 -1030 {
@@ -124,7 +124,7 @@ lab=CMFB}
 N 660 -740 660 -510 {
 lab=CMFB}
 N 450 -260 550 -260 {
-lab=#net4}
+lab=#net1}
 N 290 -260 390 -260 {
 lab=V1P}
 N 420 -260 420 -180 {
@@ -154,7 +154,7 @@ lab=Vcm_out}
 N 650 -260 650 -180 {
 lab=Vcm_out}
 N 1000 -260 1100 -260 {
-lab=#net5}
+lab=#net2}
 N 750 -260 940 -260 {
 lab=Vcm_out}
 N 970 -320 970 -300 {
@@ -274,7 +274,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1170 -970 0 0 {name=M12
-L=0.800
+L=0.8
 W=2
 nf=1
 mult=1
@@ -440,3 +440,6 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 1360 -880 0 1 {name=p26 sig_type=std_logic lab=B0}
+C {devices/lab_pin.sym} 1360 -580 0 1 {name=p27 sig_type=std_logic lab=B1}
+C {devices/lab_pin.sym} 520 -880 0 1 {name=p28 sig_type=std_logic lab=A0}
+C {devices/lab_pin.sym} 330 -670 0 1 {name=p29 sig_type=std_logic lab=A1}
