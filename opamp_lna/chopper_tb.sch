@@ -28,13 +28,13 @@ lab=GND}
 N 370 -640 370 -590 {
 lab=VDD}
 N 520 -530 580 -530 {
-lab=#net1}
+lab=MIDP}
 N 520 -490 580 -490 {
-lab=#net2}
+lab=MIDN}
 N 580 -530 660 -530 {
-lab=#net1}
+lab=MIDP}
 N 580 -490 660 -490 {
-lab=#net2}
+lab=MIDN}
 N 810 -430 810 -380 {
 lab=GND}
 N 810 -640 810 -590 {
@@ -81,4 +81,10 @@ C {devices/lab_pin.sym} 620 -560 0 0 {name=p10 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 1020 -530 0 1 {name=p11 sig_type=std_logic lab=OUTP
 }
 C {devices/lab_pin.sym} 1020 -490 0 1 {name=p12 sig_type=std_logic lab=OUTN
+}
+C {devices/lab_pin.sym} 570 -530 0 1 {name=p13 sig_type=std_logic lab=MIDP
+
+}
+C {devices/lab_pin.sym} 580 -490 0 1 {name=p14 sig_type=std_logic lab=MIDN
+
 }
