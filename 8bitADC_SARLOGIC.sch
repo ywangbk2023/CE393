@@ -414,3 +414,13 @@ C {devices/lab_pin.sym} 2120 -780 2 0 {name=p31 sig_type=std_logic lab=doutb[0]
 }
 C {devices/iopin.sym} 130 -1130 0 0 {name=p6 lab=VSS}
 C {devices/iopin.sym} 130 -1160 0 0 {name=p7 lab=VDD}
+C {devices/code.sym} 670 -1170 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
+
+"
+spice_ignore=false}
