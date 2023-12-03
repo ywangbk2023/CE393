@@ -46,7 +46,7 @@ lab=OUTP}
 N 960 -490 1020 -490 {
 lab=OUTN}
 C {chopper.sym} 370 -510 0 0 {name=x1}
-C {devices/vsource.sym} 720 -230 0 0 {name=V1 value="SIN(0 0.5 1)" savecurrent=false}
+C {devices/vsource.sym} 720 -230 0 0 {name=V1 value="SIN(0 0.001 1)" savecurrent=false}
 C {devices/vsource.sym} 380 -230 0 0 {name=V2 value=1.8 savecurrent=false}
 C {devices/vsource.sym} 470 -230 0 0 {name=V3 value="pulse(0 1.8 1ns 1ns 1ns 5ms 10ms)" savecurrent=false}
 C {devices/gnd.sym} 470 -160 0 0 {name=l1 lab=GND}
@@ -71,9 +71,11 @@ value="
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 "
 spice_ignore=false}
-C {devices/code_shown.sym} 40 -220 0 0 {name=s1 only_toplevel=false value="
-.tran 1ms 2s
-.save all"}
+C {devices/code_shown.sym} 40 -220 0 0 {name=s1 only_toplevel=false value=".control
+tran 1ms 2s
+plot SIGP-SIGN OUTP-OUTN
+save all
+.endc"}
 C {chopper.sym} 810 -510 0 0 {name=x2}
 C {devices/gnd.sym} 810 -380 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 810 -640 0 1 {name=p9 sig_type=std_logic lab=VDD}

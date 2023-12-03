@@ -1,0 +1,51 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1701405958
+<< poly >>
+rect 508 260 542 296
+<< locali >>
+rect 508 262 510 296
+rect 508 260 542 262
+rect 1602 -513 1673 -479
+<< viali >>
+rect 346 262 380 298
+rect 510 262 544 298
+rect 340 -202 374 -166
+rect 512 -202 546 -166
+<< metal1 >>
+rect 334 298 580 304
+rect 334 262 346 298
+rect 380 262 510 298
+rect 544 262 580 298
+rect 334 256 580 262
+rect 328 -166 574 -160
+rect 328 -202 340 -166
+rect 374 -202 512 -166
+rect 546 -202 574 -166
+rect 328 -208 574 -202
+use sky130_fd_pr__nfet_01v8_JB3UY8  sky130_fd_pr__nfet_01v8_JB3UY8_0
+timestamp 1701405958
+transform 0 1 1898 -1 0 199
+box -73 -226 73 226
+use sky130_fd_pr__pfet_01v8_5YUHNA  sky130_fd_pr__pfet_01v8_5YUHNA_0
+timestamp 1701405958
+transform 0 1 1898 -1 0 449
+box -109 -262 109 262
+use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_0 ece393/open_pdks/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1697562905
+transform 1 0 38 0 -1 48
+box -38 -48 406 592
+use sky130_fd_sc_hd__clkinv_2  sky130_fd_sc_hd__clkinv_2_0 ece393/open_pdks/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1697562905
+transform 1 0 38 0 1 48
+box -38 -48 406 592
+use sky130_fd_sc_hd__clkinv_8  sky130_fd_sc_hd__clkinv_8_0 ece393/open_pdks/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1697562905
+transform 1 0 406 0 -1 48
+box -38 -48 1234 592
+use sky130_fd_sc_hd__clkinv_8  sky130_fd_sc_hd__clkinv_8_1
+timestamp 1697562905
+transform 1 0 406 0 1 48
+box -38 -48 1234 592
+<< end >>
