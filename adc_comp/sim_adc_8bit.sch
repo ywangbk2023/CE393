@@ -48,7 +48,7 @@ lab=Updown}
 N -170 80 -170 100 {
 lab=GND}
 C {adc_8bit.sym} -20 0 0 0 {name=x1}
-C {devices/code_shown.sym} -620 180 0 0 {name=s1 only_toplevel=false value=".tran 1us 100us"
+C {devices/code_shown.sym} -620 180 0 0 {name=s1 only_toplevel=false value=".tran 1ns 6us"
 .save all"}
 C {devices/code.sym} -500 280 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -70,7 +70,10 @@ C {devices/lab_pin.sym} -400 -70 0 0 {name=p3 sig_type=std_logic lab=Clk}
 C {devices/gnd.sym} -400 80 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 140 0 0 1 {name=p4 sig_type=std_logic lab=Updown
 }
-C {devices/vsource.sym} -320 250 0 0 {name=V1 value=0.75 savecurrent=false}
-C {devices/vsource.sym} -400 -10 0 0 {name=V4 value=" pulse(0 1.8 1ns 1us 1us 3.125us 6.25us)" savecurrent=false}
+C {devices/vsource.sym} -320 250 0 0 {name=V1 value=1.3 savecurrent=false}
+C {devices/vsource.sym} -400 -10 0 0 {name=V4 value=" pulse(0 1.8 1ns 1ns 1ns 5ns 10ns)" savecurrent=false}
 C {devices/gnd.sym} -170 100 0 0 {name=l5 lab=GND}
-C {devices/vsource.sym} -170 50 0 0 {name=V3 value="pwl(0us 0.8 0.5us 0.8 0.50001us 1.2 1us 1.2 1.0001us 1.4 2us 1.4 2.0001us 1.8 3us 1.8 )" savecurrent=false}
+C {devices/vsource.sym} -170 50 0 0 {name=V3 value="pulse(1 1.5 1ns 1ns 1ns 10ns 20ns)" savecurrent=false
+
+#pwl(0us 0.8 0.5us 0.8 0.50001us 1.2 1us 1.2 1.0001us 1.4 2us 1.4 2.0001us 1.8 3us 1.8 )
+#pulse(1 1.5 1ns 1ns 1ns 0.5us 1us)}
