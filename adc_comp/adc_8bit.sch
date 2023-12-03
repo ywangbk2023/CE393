@@ -5,8 +5,6 @@ K {}
 V {}
 S {}
 E {}
-L 4 -1030 -20 -1030 10 {}
-L 4 -1030 -70 -1030 -40 {}
 N 180 -400 180 -260 {
 lab=VDD}
 N -560 -400 180 -400 {
@@ -166,8 +164,6 @@ C {devices/lab_pin.sym} -1110 110 0 0 {name=p26 sig_type=std_logic lab=temp1}
 C {devices/lab_pin.sym} -1150 270 0 0 {name=p27 sig_type=std_logic lab=temp2}
 C {devices/lab_pin.sym} -900 -30 0 1 {name=p28 sig_type=std_logic lab=Clk_t}
 C {devices/lab_pin.sym} -1160 -30 0 0 {name=p29 sig_type=std_logic lab=Clk}
-C {devices/lab_pin.sym} -1030 -70 0 0 {name=p30 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} -1030 10 0 0 {name=p31 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -160 -200 0 0 {name=p32 sig_type=std_logic lab=temp2}
 C {devices/lab_pin.sym} 480 -220 0 0 {name=p35 sig_type=std_logic lab=temp2}
 C {devices/lab_pin.sym} 150 -40 0 0 {name=p39 sig_type=std_logic lab=temp1}
