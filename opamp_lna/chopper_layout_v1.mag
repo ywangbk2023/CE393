@@ -1,12 +1,23 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1701405958
+timestamp 1701650493
+<< nwell >>
+rect 1640 422 2188 630
+rect 1638 388 2188 422
+rect 1640 340 2188 388
+rect 1634 338 1638 340
 << poly >>
 rect 508 260 542 296
 << locali >>
+rect 2068 476 2184 510
+rect 1604 388 1664 422
 rect 508 262 510 296
 rect 508 260 542 262
+rect 1604 260 1638 388
+rect 1604 226 1698 260
+rect 2150 172 2184 476
+rect 2106 138 2184 172
 rect 1602 -513 1673 -479
 << viali >>
 rect 346 262 380 298
@@ -14,6 +25,7 @@ rect 510 262 544 298
 rect 340 -202 374 -166
 rect 512 -202 546 -166
 << metal1 >>
+rect 1602 544 2188 640
 rect 334 298 580 304
 rect 334 262 346 298
 rect 380 262 510 298
@@ -26,11 +38,11 @@ rect 546 -202 574 -166
 rect 328 -208 574 -202
 use sky130_fd_pr__nfet_01v8_JB3UY8  sky130_fd_pr__nfet_01v8_JB3UY8_0
 timestamp 1701405958
-transform 0 1 1898 -1 0 199
+transform 0 1 1902 -1 0 199
 box -73 -226 73 226
 use sky130_fd_pr__pfet_01v8_5YUHNA  sky130_fd_pr__pfet_01v8_5YUHNA_0
 timestamp 1701405958
-transform 0 1 1898 -1 0 449
+transform 0 1 1864 -1 0 449
 box -109 -262 109 262
 use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_0 ece393/open_pdks/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1697562905

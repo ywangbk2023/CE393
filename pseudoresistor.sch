@@ -73,56 +73,56 @@ N 810 -600 810 -560 {
 lab=IN}
 N 810 -80 810 -60 {
 lab=OUT}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 830 -470 2 0 {name=M4
-L=0.5
-W=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
 C {devices/lab_pin.sym} 810 -560 0 0 {name=p2 sig_type=std_logic lab=IN
 }
 C {devices/iopin.sym} 810 -600 0 0 {name=p1 lab=IN}
 C {devices/iopin.sym} 810 -60 0 0 {name=p3 lab=OUT
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 830 -370 2 0 {name=M1
+C {sky130_fd_pr/pfet_01v8.sym} 830 -470 0 1 {name=M5
 L=0.5
 W=1
 nf=1
-mult=1
+mult=10
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 830 -260 2 0 {name=M2
+C {sky130_fd_pr/pfet_01v8.sym} 830 -370 0 1 {name=M1
 L=0.5
 W=1
 nf=1
-mult=1
+mult=10
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 830 -160 2 0 {name=M3
+C {sky130_fd_pr/pfet_01v8.sym} 830 -260 0 1 {name=M2
 L=0.5
 W=1
+nf=1
+mult=10
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 830 -160 0 1 {name=M3
+L=0.5
+W=1.2
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -131,6 +131,6 @@ as="'int((nf+2)/2) * W/nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+model=pfet_01v8
 spiceprefix=X
 }

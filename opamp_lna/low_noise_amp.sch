@@ -205,7 +205,7 @@ N 260 -970 310 -970 {
 lab=Vbias}
 C {sky130_fd_pr/pfet_01v8.sym} 160 -810 0 0 {name=M3
 L=0.8
-W=12
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -427,7 +427,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 540 -810 0 1 {name=M6
 L=0.8
-W=12
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
