@@ -140,7 +140,7 @@ lab=GND}
 N 1065 -1245 1065 -1205 {
 lab=vref_l}
 C {adc_8bit_DAC.sym} 1180 -250 0 0 {name=x1}
-C {devices/vsource.sym} 955 -1175 0 0 {name=vref_h value=0.7 savecurrent=false}
+C {devices/vsource.sym} 955 -1175 0 0 {name=vref_h value=1.2 savecurrent=false}
 C {devices/gnd.sym} 955 -1115 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 1430 -330 2 0 {name=p7 sig_type=std_logic lab=REF
 }
@@ -264,7 +264,7 @@ C {devices/lab_pin.sym} 630 -520 0 0 {name=p50 sig_type=std_logic lab=REF
 }
 C {devices/vsource.sym} 540 -1190 0 0 {name=V2 value="PULSE(0 1.8 0ns 0.1ns 0.1ns 2.5ns 5ns)" savecurrent=false}
 C {devices/vsource.sym} 130 -700 0 0 {name=Vdd1 value= "PWL(0 0 5ns 0 5.00001ns 1.8 15ns 1.8 15.00001ns 0 )" savecurrent=false}
-C {devices/vsource.sym} 1065 -1175 0 0 {name=vref_h1 value=0.35 savecurrent=false}
+C {devices/vsource.sym} 1065 -1175 0 0 {name=vref_h1 value=0.5 savecurrent=false}
 C {devices/gnd.sym} 1065 -1115 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 1065 -1245 0 0 {name=p38 sig_type=std_logic lab=vref_l}
 C {devices/lab_pin.sym} 1390 -250 0 1 {name=p52 sig_type=std_logic lab=vref_l
