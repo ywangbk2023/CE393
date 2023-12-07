@@ -5,11 +5,11 @@ K {}
 V {}
 S {}
 E {}
-N 955 -1145 955 -1115 {
+N 675 -885 675 -855 {
 lab=GND}
 N 1330 -330 1430 -330 {
 lab=REF}
-N 955 -1145 955 -1115 {
+N 675 -885 675 -855 {
 lab=GND}
 N 950 -330 1030 -330 {
 lab=samp_en}
@@ -27,7 +27,7 @@ N 1330 -290 1390 -290 {
 lab=VDD}
 N 1330 -270 1390 -270 {
 lab=vref_h}
-N 955 -1245 955 -1205 {
+N 675 -985 675 -945 {
 lab=vref_h}
 N 950 -310 1030 -310 {
 lab=doutb0}
@@ -133,15 +133,15 @@ N 630 -560 670 -560 {
 lab=Vmac}
 N 630 -520 670 -520 {
 lab=REF}
-N 1065 -1145 1065 -1115 {
+N 785 -885 785 -855 {
 lab=GND}
-N 1065 -1145 1065 -1115 {
+N 785 -885 785 -855 {
 lab=GND}
-N 1065 -1245 1065 -1205 {
+N 785 -985 785 -945 {
 lab=vref_l}
 C {adc_8bit_DAC.sym} 1180 -250 0 0 {name=x1}
-C {devices/vsource.sym} 955 -1175 0 0 {name=vref_h value=1.2 savecurrent=false}
-C {devices/gnd.sym} 955 -1115 0 0 {name=l1 lab=GND}
+C {devices/vsource.sym} 675 -915 0 0 {name=vref_h value=1.2 savecurrent=false}
+C {devices/gnd.sym} 675 -855 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 1430 -330 2 0 {name=p7 sig_type=std_logic lab=REF
 }
 C {devices/code.sym} 1090 -730 0 0 {name=TT_MODELS
@@ -158,7 +158,7 @@ C {devices/lab_pin.sym} 950 -330 0 0 {name=p3 sig_type=std_logic lab=samp_en}
 C {devices/lab_pin.sym} 130 -780 0 0 {name=p4 sig_type=std_logic lab=samp_en}
 C {devices/lab_pin.sym} 1390 -290 0 1 {name=p11 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1390 -270 0 1 {name=p29 sig_type=std_logic lab=vref_h}
-C {devices/lab_pin.sym} 955 -1245 0 0 {name=p2 sig_type=std_logic lab=vref_h}
+C {devices/lab_pin.sym} 675 -985 0 0 {name=p2 sig_type=std_logic lab=vref_h}
 C {devices/lab_pin.sym} 200 -290 0 0 {name=p5 sig_type=std_logic lab=VDD
 }
 C {devices/lab_pin.sym} 200 -270 0 0 {name=p6 sig_type=std_logic lab=VSS
@@ -184,17 +184,16 @@ C {devices/lab_pin.sym} 270 -1240 2 0 {name=p15 sig_type=std_logic lab=CLK}
 C {devices/gnd.sym} 130 -1110 0 0 {name=l5 lab=GND}
 C {devices/gnd.sym} 200 -1110 0 0 {name=l8 lab=GND}
 C {devices/gnd.sym} 270 -1110 0 0 {name=l9 lab=GND}
-C {devices/vsource.sym} 270 -1180 0 0 {name=V1 value="PULSE(0 1.8 1.25ns 0.1ns 0.1ns 2.5ns 5ns)" savecurrent=false}
+C {devices/vsource.sym} 270 -1180 0 0 {name=V1 value="PULSE(0 1.8 0 0.1ns 0.1ns 2.5ns 5ns)" savecurrent=false}
 C {devices/vsource.sym} 200 -1180 0 0 {name=V3 value=0 savecurrent=false}
-C {devices/vsource.sym} 270 -810 0 0 {name=Vdd7 value="PWL(0 0 20ns 0 20.00001ns 1.8 30ns 1.8 30.00001ns 0 )" savecurrent=false}
+C {devices/vsource.sym} 270 -810 0 0 {name=Vdd7 value="PWL(0 0.6 20ns 0.6 20.00001ns 1.2 25ns 1.2 25.00001ns 0.6 )" savecurrent=false}
 C {devices/lab_pin.sym} 270 -870 2 0 {name=p16 sig_type=std_logic lab=trigger
 }
 C {devices/gnd.sym} 270 -740 0 0 {name=l11 lab=GND}
-C {devices/vsource.sym} 120 -930 0 0 {name=Vdd8 value= "PWL(0 1.8 5ns 1.8 5.00001ns 0 15ns 0 15.00001ns 1.8 )" savecurrent=false}
+C {devices/vsource.sym} 120 -930 0 0 {name=Vdd8 value= "PWL(0 1.2 5ns 1.2 5.00001ns 0.6 15ns 0.6 15.00001ns 1.2 )" savecurrent=false}
 C {devices/lab_pin.sym} 120 -990 2 0 {name=p17 sig_type=std_logic lab=rstb
 }
 C {devices/gnd.sym} 120 -860 0 0 {name=l12 lab=GND}
-C {8bitADC_SARLOGIC_pinout.sym} 400 -200 0 0 {name=x2}
 C {devices/lab_pin.sym} 600 -330 2 0 {name=p18 sig_type=std_logic lab=dout2
 }
 C {devices/lab_pin.sym} 600 -350 2 0 {name=p19 sig_type=std_logic lab=dout1
@@ -254,7 +253,11 @@ C {devices/lab_pin.sym} 540 -1250 0 0 {name=p46 sig_type=std_logic lab=Clk_CMP
 C {devices/gnd.sym} 540 -1100 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} 950 -540 0 1 {name=p47 sig_type=std_logic lab=compare
 }
-C {devices/vsource.sym} 840 -1190 0 0 {name=V4 value=0.3 savecurrent=false}
+C {devices/vsource.sym} 840 -1190 0 0 {name=V4 value="SINE(0.6 1.2 100MHz)" savecurrent=false
+
+#PWL(0 0.6 26ns 0.6 26.0001ns 1.2 30ns 1.2 30.00001ns 0.6 35ns 0.6 36ns 1.2 50ns 1.2 50.0001ns 0.6 60ns 0.6 60.0001ns 0.6)" savecurrent=false
+
+}
 C {devices/lab_pin.sym} 790 -650 2 0 {name=p12 sig_type=std_logic lab=VDD
 }
 C {devices/lab_pin.sym} 760 -690 2 0 {name=p48 sig_type=std_logic lab=Clk_CMP
@@ -262,10 +265,11 @@ C {devices/lab_pin.sym} 760 -690 2 0 {name=p48 sig_type=std_logic lab=Clk_CMP
 C {devices/lab_pin.sym} 630 -560 0 0 {name=p49 sig_type=std_logic lab=Vmac}
 C {devices/lab_pin.sym} 630 -520 0 0 {name=p50 sig_type=std_logic lab=REF
 }
-C {devices/vsource.sym} 540 -1190 0 0 {name=V2 value="PULSE(0 1.8 0ns 0.1ns 0.1ns 2.5ns 5ns)" savecurrent=false}
-C {devices/vsource.sym} 130 -700 0 0 {name=Vdd1 value= "PWL(0 0 5ns 0 5.00001ns 1.8 15ns 1.8 15.00001ns 0 )" savecurrent=false}
-C {devices/vsource.sym} 1065 -1175 0 0 {name=vref_h1 value=0.5 savecurrent=false}
-C {devices/gnd.sym} 1065 -1115 0 0 {name=l3 lab=GND}
-C {devices/lab_pin.sym} 1065 -1245 0 0 {name=p38 sig_type=std_logic lab=vref_l}
+C {devices/vsource.sym} 540 -1190 0 0 {name=V2 value="PULSE(0 1.8 1.25ns 0.1ns 0.1ns 2.5ns 5ns)" savecurrent=false}
+C {devices/vsource.sym} 130 -700 0 0 {name=Vdd1 value= "PWL(0 0.6 5ns 0.6 5.00001ns 1.2 15ns 1.2 15.00001ns 0.6 )" savecurrent=false}
+C {devices/vsource.sym} 785 -915 0 0 {name=vref_h1 value=0.6 savecurrent=false}
+C {devices/gnd.sym} 785 -855 0 0 {name=l3 lab=GND}
+C {devices/lab_pin.sym} 785 -985 0 0 {name=p38 sig_type=std_logic lab=vref_l}
 C {devices/lab_pin.sym} 1390 -250 0 1 {name=p52 sig_type=std_logic lab=vref_l
 }
+C {8bitADC_SARLOGIC_pinout.sym} 400 -200 0 0 {name=x2}
