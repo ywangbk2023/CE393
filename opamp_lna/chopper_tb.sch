@@ -31,10 +31,6 @@ N 520 -530 580 -530 {
 lab=MIDP}
 N 520 -490 580 -490 {
 lab=MIDN}
-N 580 -530 660 -530 {
-lab=MIDP}
-N 580 -490 660 -490 {
-lab=MIDN}
 N 810 -430 810 -380 {
 lab=GND}
 N 810 -640 810 -590 {
@@ -46,9 +42,9 @@ lab=OUTP}
 N 960 -490 1020 -490 {
 lab=OUTN}
 C {chopper.sym} 370 -510 0 0 {name=x1}
-C {devices/vsource.sym} 720 -230 0 0 {name=V1 value="SIN(0 0.001 1)" savecurrent=false}
+C {devices/vsource.sym} 720 -230 0 0 {name=V1 value="SIN(0 0.0001 1)" savecurrent=false}
 C {devices/vsource.sym} 380 -230 0 0 {name=V2 value=1.8 savecurrent=false}
-C {devices/vsource.sym} 470 -230 0 0 {name=V3 value="pulse(0 1.8 1ns 1ns 1ns 5ms 10ms)" savecurrent=false}
+C {devices/vsource.sym} 470 -230 0 0 {name=V3 value="pulse(0 1.8 0ns 0ns 0ns 5ms 10ms)" savecurrent=false}
 C {devices/gnd.sym} 470 -160 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 380 -160 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 370 -380 0 0 {name=l4 lab=GND}
@@ -72,8 +68,9 @@ value="
 "
 spice_ignore=false}
 C {devices/code_shown.sym} 40 -220 0 0 {name=s1 only_toplevel=false value=".control
-tran 1ms 2s
+tran 2.5ms 5s
 plot SIGP-SIGN OUTP-OUTN
+plot SIGP-SIGN MIDP-MIDN
 save all
 .endc"}
 C {chopper.sym} 810 -510 0 0 {name=x2}

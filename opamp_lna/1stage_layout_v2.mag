@@ -1,0 +1,56 @@
+magic
+tech sky130A
+timestamp 1701909930
+use lna_layout_v2  lna_layout_v2_0
+timestamp 1701906189
+transform 1 0 173 0 1 1206
+box -173 -1206 3099 695
+use sky130_fd_pr__cap_mim_m3_1_PKVAZD  sky130_fd_pr__cap_mim_m3_1_PKVAZD_0
+timestamp 1701909930
+transform 1 0 -9968 0 1 10257
+box -9855 -9477 9855 9477
+use sky130_fd_pr__cap_mim_m3_1_PKVAZD  sky130_fd_pr__cap_mim_m3_1_PKVAZD_1
+timestamp 1701909930
+transform 1 0 -9968 0 1 -8735
+box -9855 -9477 9855 9477
+use sky130_fd_pr__cap_mim_m3_1_S6JVQT  sky130_fd_pr__cap_mim_m3_1_S6JVQT_0
+timestamp 1701909930
+transform 0 -1 1403 1 0 -3851
+box -3246 -1270 3246 1270
+use sky130_fd_pr__cap_mim_m3_1_S6JVQT  sky130_fd_pr__cap_mim_m3_1_S6JVQT_1
+timestamp 1701909930
+transform 0 1 1403 -1 0 5849
+box -3246 -1270 3246 1270
+use sky130_fd_pr__pfet_01v8_WNX9FC  sky130_fd_pr__pfet_01v8_WNX9FC_0
+timestamp 1701909930
+transform 1 0 1689 0 1 2194
+box -255 -106 255 106
+use sky130_fd_pr__pfet_01v8_WNX9FC  sky130_fd_pr__pfet_01v8_WNX9FC_1
+timestamp 1701909930
+transform 1 0 1244 0 1 2194
+box -255 -106 255 106
+use sky130_fd_pr__pfet_01v8_WNX9FC  sky130_fd_pr__pfet_01v8_WNX9FC_2
+timestamp 1701909930
+transform 1 0 1689 0 1 2394
+box -255 -106 255 106
+use sky130_fd_pr__pfet_01v8_WNX9FC  sky130_fd_pr__pfet_01v8_WNX9FC_3
+timestamp 1701909930
+transform 1 0 1244 0 1 2394
+box -255 -106 255 106
+use sky130_fd_pr__pfet_01v8_WNX9FC  sky130_fd_pr__pfet_01v8_WNX9FC_4
+timestamp 1701909930
+transform 1 0 1689 0 1 -456
+box -255 -106 255 106
+use sky130_fd_pr__pfet_01v8_WNX9FC  sky130_fd_pr__pfet_01v8_WNX9FC_5
+timestamp 1701909930
+transform 1 0 1244 0 1 -456
+box -255 -106 255 106
+use sky130_fd_pr__pfet_01v8_WNX9FC  sky130_fd_pr__pfet_01v8_WNX9FC_6
+timestamp 1701909930
+transform 1 0 1689 0 1 -256
+box -255 -106 255 106
+use sky130_fd_pr__pfet_01v8_WNX9FC  sky130_fd_pr__pfet_01v8_WNX9FC_7
+timestamp 1701909930
+transform 1 0 1244 0 1 -256
+box -255 -106 255 106
+<< end >>

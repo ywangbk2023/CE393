@@ -86,31 +86,31 @@ lab=Vin_N}
 N 1210 -630 1210 -460 {
 lab=V0_N}
 N 1410 -910 1490 -910 {
-lab=V0_P}
+lab=#net4}
 N 1910 -1130 1910 -910 {
 lab=V1_P}
 N 1410 -1130 1410 -910 {
-lab=V0_P}
+lab=#net4}
 N 1410 -830 1490 -830 {
-lab=V0_N}
+lab=#net5}
 N 1910 -830 1910 -630 {
 lab=V1_N}
 N 1410 -1600 1410 -1480 {
-lab=V0_P}
+lab=#net4}
 N 1410 -1600 1640 -1600 {
-lab=V0_P}
+lab=#net4}
 N 1910 -1600 1910 -1480 {
 lab=V1_P}
 N 1410 -830 1410 -630 {
-lab=V0_N}
+lab=#net5}
 N 1410 -630 1580 -630 {
-lab=V0_N}
+lab=#net5}
 N 1630 -750 1630 -690 {
-lab=#net4}
+lab=#net6}
 N 1630 -690 1650 -690 {
-lab=#net4}
+lab=#net6}
 N 1650 -750 1650 -690 {
-lab=#net4}
+lab=#net6}
 N 1590 -1040 1590 -1010 {
 lab=VDD}
 N 1630 -1040 1630 -1010 {
@@ -128,49 +128,49 @@ lab=V1_P}
 N 1810 -830 1910 -830 {
 lab=V1_N}
 N 1410 -460 1620 -460 {
-lab=V0_N}
+lab=#net5}
 N 1680 -460 1910 -460 {
 lab=V1_N}
 N 1410 -1480 1410 -1130 {
-lab=V0_P}
+lab=#net4}
 N 1910 -1480 1910 -1130 {
 lab=V1_P}
 N 1410 -1190 1590 -1190 {
-lab=V0_P}
+lab=#net4}
 N 1730 -1190 1910 -1190 {
 lab=V1_P}
 N 1410 -620 1410 -460 {
-lab=V0_N}
+lab=#net5}
 N 1410 -630 1410 -620 {
-lab=V0_N}
+lab=#net5}
 N 1910 -630 1910 -460 {
 lab=V1_N}
 N 2080 -910 2160 -910 {
-lab=V1_P}
+lab=#net7}
 N 2580 -1130 2580 -910 {
 lab=Vout_P}
 N 2080 -1130 2080 -910 {
-lab=V1_P}
+lab=#net7}
 N 2080 -830 2160 -830 {
-lab=V1_N}
+lab=#net8}
 N 2580 -830 2580 -630 {
 lab=Vout_N}
 N 2080 -1600 2080 -1480 {
-lab=V1_P}
+lab=#net7}
 N 2080 -1600 2310 -1600 {
-lab=V1_P}
+lab=#net7}
 N 2580 -1600 2580 -1480 {
 lab=Vout_P}
 N 2080 -830 2080 -630 {
-lab=V1_N}
+lab=#net8}
 N 2080 -630 2250 -630 {
-lab=V1_N}
+lab=#net8}
 N 2300 -750 2300 -690 {
-lab=#net5}
+lab=#net9}
 N 2300 -690 2320 -690 {
-lab=#net5}
+lab=#net9}
 N 2320 -750 2320 -690 {
-lab=#net5}
+lab=#net9}
 N 2260 -1040 2260 -1010 {
 lab=VDD}
 N 2300 -1040 2300 -1010 {
@@ -188,21 +188,21 @@ lab=Vout_P}
 N 2480 -830 2580 -830 {
 lab=Vout_N}
 N 2080 -460 2290 -460 {
-lab=V1_N}
+lab=#net8}
 N 2350 -460 2580 -460 {
 lab=Vout_N}
 N 2080 -1480 2080 -1130 {
-lab=V1_P}
+lab=#net7}
 N 2580 -1480 2580 -1130 {
 lab=Vout_P}
 N 2080 -1190 2260 -1190 {
-lab=V1_P}
+lab=#net7}
 N 2400 -1190 2580 -1190 {
 lab=Vout_P}
 N 2080 -620 2080 -460 {
-lab=V1_N}
+lab=#net8}
 N 2080 -630 2080 -620 {
-lab=V1_N}
+lab=#net8}
 N 2580 -630 2580 -460 {
 lab=Vout_N}
 N 2580 -830 2740 -830 {
@@ -214,9 +214,9 @@ lab=Vin_P}
 N 1030 -1190 1210 -1190 {
 lab=V0_P}
 N 1340 -830 1410 -830 {
-lab=V0_N}
+lab=#net5}
 N 1340 -910 1410 -910 {
-lab=V0_P}
+lab=#net4}
 N 1210 -830 1280 -830 {
 lab=V0_N}
 N 1210 -910 1280 -910 {
@@ -226,9 +226,9 @@ lab=V1_P}
 N 1910 -830 1960 -830 {
 lab=V1_N}
 N 2020 -910 2080 -910 {
-lab=V1_P}
+lab=#net7}
 N 2020 -830 2080 -830 {
-lab=V1_N}
+lab=#net8}
 N 230 -750 270 -750 {
 lab=#net3}
 N 330 -750 370 -750 {
@@ -247,14 +247,8 @@ N 310 -1010 320 -1010 {
 lab=#net2}
 N 270 -750 330 -750 {
 lab=#net3}
-N 1280 -910 1340 -910 {
-lab=V0_P}
-N 1280 -830 1340 -830 {
-lab=V0_N}
-N 1960 -910 2020 -910 {
-lab=V1_P}
-N 1960 -830 2020 -830 {
-lab=V1_N}
+N 1960 -910 2020 -910 {}
+N 1960 -830 2020 -830 {}
 C {low_noise_amp.sym} 950 -870 0 0 {name=x1}
 C {devices/lab_pin.sym} 890 -1040 1 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 930 -1040 1 0 {name=p2 sig_type=std_logic lab=Vbias}
@@ -285,20 +279,22 @@ spice_ignore=false}
 C {devices/code_shown.sym} 670 -230 0 0 {name=s1 only_toplevel=false value="
 .PARAM R=0
 .control
-#noise v(Vout_P) Vsource dec 10 20 1000
+noise v(Vout_P) Vsource dec 10 20 1000
+print inoise_total
 #tran 100us 2s
 #plot Vin_P-Vin_N V0_P-V0_N
-ac dec 10 0.000001 10000000
-plot vdb(V0_P) vdb(V0_N)
+#ac dec 10 0.000001 10000000
+#plot vdb(V0_P) vdb(V0_N)
 #plot vdb(V1_P) vdb(V1_N)
 #plot vdb(Vout_P) vdb(Vout_N)
-plot vdb(V0_P) vdb(V1_P) vdb(Vout_P)
+#plot vdb(V0_P) vdb(V1_P) vdb(Vout_P)
 save all
 .endc"}
 C {devices/gnd.sym} 890 -720 0 0 {name=l4 lab=GND}
 C {/home/lcg3895/CE393/pseudoresistor.sym} 570 -460 0 0 {name=x2}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 950 -460 3 1 {name=C1 model=cap_mim_m3_2 W=50 L=30 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 970 -1600 3 1 {name=C2 model=cap_mim_m3_2 W=50 L=30 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 400 -750 3 1 {name=C3 model=cap_mim_m3_2 W=150 L=150 MF=1 spiceprefix=X}
 C {devices/lab_pin.sym} 2740 -910 0 1 {name=p19 sig_type=std_logic lab=Vout_P}
 C {devices/lab_pin.sym} 2740 -830 0 1 {name=p20 sig_type=std_logic lab=Vout_N}
 C {low_noise_amp.sym} 1650 -870 0 0 {name=x3}
@@ -320,9 +316,10 @@ C {devices/lab_pin.sym} 1190 -910 3 1 {name=p17 sig_type=std_logic lab=V0_P}
 C {devices/lab_pin.sym} 1880 -830 3 1 {name=p15 sig_type=std_logic lab=V1_N}
 C {devices/lab_pin.sym} 1880 -910 3 1 {name=p18 sig_type=std_logic lab=V1_P}
 C {/home/lcg3895/CE393/pseudoresistor.sym} 580 -1020 0 0 {name=x12}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 1310 -830 3 1 {name=C9 model=cap_mim_m3_2 W=100 L=100 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 1310 -910 3 1 {name=C10 model=cap_mim_m3_2 W=100 L=100 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 400 -1010 3 1 {name=C11 model=cap_mim_m3_2 W=150 L=150 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1670 -1600 3 1 {name=C5 model=cap_mim_m3_2 W=20 L=30 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1650 -460 3 1 {name=C13 model=cap_mim_m3_2 W=20 L=30 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 2340 -1600 3 1 {name=C6 model=cap_mim_m3_2 W=150 L=75 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 400 -1010 3 1 {name=C4 model=cap_mim_m3_1 W=300 L=200 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 400 -750 3 1 {name=C8 model=cap_mim_m3_1 W=300 L=200 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 2320 -460 3 1 {name=C3 model=cap_mim_m3_2 W=150 L=75 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 2320 -460 3 1 {name=C7 model=cap_mim_m3_2 W=75 L=75 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 2340 -1600 3 1 {name=C6 model=cap_mim_m3_2 W=75 L=75 MF=1 spiceprefix=X}

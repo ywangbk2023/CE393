@@ -1,0 +1,20 @@
+magic
+tech sky130A
+timestamp 1702110042
+use chopper_layout_v1  chopper_layout_v1_0
+timestamp 1701650493
+transform 1 0 388 0 1 428
+box 0 -272 1094 320
+use lna_layout_v2  lna_layout_v2_0
+timestamp 1702109646
+transform 1 0 36391 0 1 16114
+box -16891 -16114 2105 15686
+use lna_layout_v2  lna_layout_v2_1
+timestamp 1702109646
+transform 1 0 16891 0 1 16114
+box -16891 -16114 2105 15686
+use lna_layout_v2  lna_layout_v2_2
+timestamp 1702109646
+transform 1 0 55641 0 1 16063
+box -16891 -16114 2105 15686
+<< end >>

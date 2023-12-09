@@ -1,0 +1,118 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_HZDBC9 in circuit lna_layout_v2 (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_9GUA3Y in circuit lna_layout_v2 (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_8BU2MY in circuit lna_layout_v2 (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_ESNC2G in circuit lna_layout_v2 (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_AM3UTC in circuit lna_layout_v2 (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_S43UTC in circuit lna_layout_v2 (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VBYK8W in circuit lna_layout_v2 (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_VYX8PH in circuit lna_layout_v2 (1)(1 instance)
+
+Class lna_layout_v2 (1):  Merged 20 parallel devices.
+Subcircuit summary:
+Circuit 1: low_noise_amp.spice             |Circuit 2: lna_layout_v2                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (26->10)           |sky130_fd_pr__pfet_01v8 (28->10)           
+sky130_fd_pr__nfet_01v8 (5)                |sky130_fd_pr__nfet_01v8 (7->5)             
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 17 **Mismatch**            |Number of nets: 20 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: low_noise_amp.spice             |Circuit 2: lna_layout_v2                   
+
+---------------------------------------------------------------------------------------
+Net: B1                                    |Net: m1_906_n1694#                         
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
+                                           |                                           
+Net: VDD                                   |Net: VDD                                   
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/4 = 6            |                                           
+                                           |                                           
+Net: VSS                                   |Net: VSS                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
+  sky130_fd_pr__nfet_01v8/4 = 5            |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: Vcm_out                               |Net: Vcm_out                               
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+  sky130_fd_pr__pfet_01v8/4 = 2            |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
+  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
+                                           |                                           
+(no matching net)                          |Net: VSUBS                                 
+                                           |  sky130_fd_pr__nfet_01v8/4 = 5            
+                                           |                                           
+(no matching net)                          |Net: w_732_n2488#                          
+                                           |  sky130_fd_pr__pfet_01v8/4 = 4            
+                                           |                                           
+(no matching net)                          |Net: w_10_104#                             
+                                           |  sky130_fd_pr__pfet_01v8/4 = 6            
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: B0                                    |Net: m1_714_n76#                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: low_noise_amp.spice             |Circuit 2: lna_layout_v2                   
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |VDD                                        
+(no matching pin)                          |Vbias                                      
+(no matching pin)                          |INP                                        
+(no matching pin)                          |INN                                        
+(no matching pin)                          |V1N                                        
+(no matching pin)                          |V1P                                        
+(no matching pin)                          |Vref                                       
+(no matching pin)                          |Vcm_in                                     
+(no matching pin)                          |VSS                                        
+(no matching pin)                          |Vcm_out                                    
+---------------------------------------------------------------------------------------
+Cell pin lists for low_noise_amp.spice and lna_layout_v2 altered to match.
+Device classes low_noise_amp.spice and lna_layout_v2 are equivalent.
+
+Final result: Top level cell failed pin matching.
