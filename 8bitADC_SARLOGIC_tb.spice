@@ -1,0 +1,80 @@
+** sch_path: /home/krr2464/CE393project/8bitADC_SARLOGIC_tb.sch
+.subckt 8bitADC_SARLOGIC_tb
+Vdd5 VDD GND 1.8
+Vdd6 cmp GND PULSE(0 1.8 0 0 0 5ns 10ns)
+V1 CLK GND PULSE(0 1.8 0.1ns 0.1ns 0.1ns 2.5ns 5ns)
+V3 VSS GND 0
+Vdd7 start GND PWL(0 0 20ns 0 20.00001ns 1.8 30ns 1.8 30.00001ns 0)
+Vdd8 rstb GND PWL(0 1.8 5ns 1.8 5.00001ns 0 15ns 0 15.00001ns 1.8
+x1 VDD cmp VSS start net1 dout0 rstb CLK net2 dout1 net3 dout2 dout3 net4 dout4 net5 dout5 net6
++ dout6 net7 net8 dout7 8bitADC_SARLOGIC_pinout
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /home/ece393/open_pdks/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/ece393/open_pdks/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+
+
+
+.tran  0.1ns 100ns
+
+
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:  8bitADC_SARLOGIC_pinout.sym # of pins=22
+** sym_path: /home/krr2464/CE393project/8bitADC_SARLOGIC_pinout.sym
+** sch_path: /home/krr2464/CE393project/8bitADC_SARLOGIC_pinout.sch
+.subckt 8bitADC_SARLOGIC_pinout VDD cmp VSS start doutb0 dout0 rstb clk doutb1 dout1 doutb2 dout2
++ dout3 doutb3 dout4 doutb4 dout5 doutb5 dout6 doutb6 doutb7 dout7
+*.ipin cmp
+*.ipin start
+*.ipin rstb
+*.ipin clk
+*.iopin dout0
+*.iopin doutb0
+*.iopin VSS
+*.iopin VDD
+*.iopin dout1
+*.iopin dout2
+*.iopin dout3
+*.iopin dout4
+*.iopin dout5
+*.iopin dout6
+*.iopin dout7
+*.iopin doutb1
+*.iopin doutb2
+*.iopin doutb3
+*.iopin doutb4
+*.iopin doutb5
+*.iopin doutb6
+*.iopin doutb7
+x18 cmp VSS VNB VPB VDD cmp_delayed sky130_fd_sc_hd__buf_1
+x19 clk VSS VNB VPB VDD net3 sky130_fd_sc_hd__buf_1
+x20 net1 VSS VNB VPB VDD reset sky130_fd_sc_hd__buf_1
+x21 rstb VSS VNB VPB VDD net1 sky130_fd_sc_hd__buf_1
+x22 start VSS VNB VPB VDD net2 sky130_fd_sc_hd__buf_1
+x2 clk_t net2 reset VSS VNB VPB VDD q nq1 sky130_fd_sc_hd__dfrbp_1
+x9 clk_t q reset VSS VNB VPB VDD q2 nq2 sky130_fd_sc_hd__dfrbp_1
+x10 clk_t q2 reset VSS VNB VPB VDD q3 nq3 sky130_fd_sc_hd__dfrbp_1
+x11 clk_t q3 reset VSS VNB VPB VDD q4 nq4 sky130_fd_sc_hd__dfrbp_1
+x12 clk_t q4 reset VSS VNB VPB VDD q5 nq5 sky130_fd_sc_hd__dfrbp_1
+x14 clk_t q5 reset VSS VNB VPB VDD q6 nq6 sky130_fd_sc_hd__dfrbp_1
+x15 clk_t q6 reset VSS VNB VPB VDD q7 nq7 sky130_fd_sc_hd__dfrbp_1
+x16 clk_t q7 reset VSS VNB VPB VDD q8 nq8 sky130_fd_sc_hd__dfrbp_1
+x17 clk_t q8 reset VSS VNB VPB VDD q9 net4 sky130_fd_sc_hd__dfrbp_1
+x23 net3 VSS VNB VPB VDD clk_t sky130_fd_sc_hd__inv_1
+x13 dout6 cmp_delayed reset nq1 VSS VNB VPB VDD dout7 doutb7 sky130_fd_sc_hd__dfbbp_1
+x1 dout5 cmp_delayed reset nq2 VSS VNB VPB VDD dout6 doutb6 sky130_fd_sc_hd__dfbbp_1
+x3 dout4 cmp_delayed reset nq3 VSS VNB VPB VDD dout5 doutb5 sky130_fd_sc_hd__dfbbp_1
+x4 dout3 cmp_delayed reset nq4 VSS VNB VPB VDD dout4 doutb4 sky130_fd_sc_hd__dfbbp_1
+x5 dout2 cmp_delayed reset nq5 VSS VNB VPB VDD dout3 doutb3 sky130_fd_sc_hd__dfbbp_1
+x6 dout1 cmp_delayed reset nq6 VSS VNB VPB VDD dout2 doutb2 sky130_fd_sc_hd__dfbbp_1
+x7 dout0 cmp_delayed reset nq7 VSS VNB VPB VDD dout1 doutb1 sky130_fd_sc_hd__dfbbp_1
+x8 q9 cmp_delayed reset nq8 VSS VNB VPB VDD dout0 doutb0 sky130_fd_sc_hd__dfbbp_1
+**.ends
+
+.GLOBAL GND
+.end

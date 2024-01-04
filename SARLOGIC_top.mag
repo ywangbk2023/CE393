@@ -1,0 +1,9 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1702165270
+use SARLOGIC_layout  SARLOGIC_layout_0
+timestamp 1702165270
+transform 1 0 1166 0 1 1740
+box -1166 -1740 9685 800
+<< end >>

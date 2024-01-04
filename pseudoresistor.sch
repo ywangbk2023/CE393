@@ -21,7 +21,7 @@ N 810 -230 810 -190 {
 lab=#net3}
 N 810 -130 810 -80 {
 <<<<<<< Updated upstream
-lab=OUT}
+lab=GND}
 N 790 -470 810 -470 {
 lab=IN}
 N 790 -510 790 -470 {
@@ -54,34 +54,76 @@ N 790 -310 810 -310 {
 lab=#net2}
 N 850 -160 880 -160 {
 <<<<<<< Updated upstream
-lab=OUT}
+lab=GND}
 N 880 -160 880 -120 {
-lab=OUT}
+lab=GND}
 N 880 -120 880 -100 {
-lab=OUT}
+lab=GND}
 N 810 -100 880 -100 {
-lab=OUT}
+lab=GND}
 N 790 -160 810 -160 {
-lab=OUT}
+lab=GND}
 N 790 -160 790 -120 {
-lab=OUT}
+lab=GND}
 N 790 -120 790 -110 {
-lab=OUT}
+lab=GND}
 N 790 -110 810 -110 {
-lab=OUT}
+lab=GND}
+N 650 -600 650 -490 {
+lab=IN}
+N 650 -600 810 -600 {
+lab=IN}
 N 810 -600 810 -560 {
 lab=IN}
+N 650 -430 650 -60 {
+lab=GND}
+N 650 -60 810 -60 {
+lab=GND}
 N 810 -80 810 -60 {
-lab=OUT}
+lab=GND}
+N 720 -60 720 -50 {
+lab=GND}
+C {devices/code.sym} 420 -550 0 0 {name=TT_MODELS1
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
+
+.control
+	
+	dc V2 0 1 0.0001
+	plot i(V2)
+	
+
+.endc
+.save all
+"
+spice_ignore=false}
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 830 -470 2 0 {name=M4
+L=l
+W=w
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_lvt
+spiceprefix=X
+}
 C {devices/lab_pin.sym} 810 -560 0 0 {name=p2 sig_type=std_logic lab=IN
 }
-C {devices/iopin.sym} 810 -600 0 0 {name=p1 lab=IN}
-C {devices/iopin.sym} 810 -60 0 0 {name=p3 lab=OUT
+C {devices/gnd.sym} 720 -50 0 0 {name=l2 lab=GND}
+C {devices/vsource.sym} 650 -460 0 0 {name=V2 value=1 savecurrent=true
 }
-C {sky130_fd_pr/pfet_01v8.sym} 830 -470 0 1 {name=M5
-L=0.5
-W=1
-nf=5
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 830 -370 2 0 {name=M6
+L=l
+W=w
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -89,13 +131,13 @@ as="'int((nf+2)/2) * W/nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 830 -370 0 1 {name=M1
-L=0.5
-W=1
-nf=5
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 830 -260 2 0 {name=M7
+L=l
+W=w
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -103,13 +145,13 @@ as="'int((nf+2)/2) * W/nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 830 -260 0 1 {name=M2
-L=0.5
-W=1
-nf=5
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 830 -160 2 0 {name=M8
+L=l
+W=w
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -117,20 +159,11 @@ as="'int((nf+2)/2) * W/nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 830 -160 0 1 {name=M3
-L=0.5
-W=1
-nf=5
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
+C {devices/code_shown.sym} 400 -360 0 0 {name=s1 only_toplevel=false value="
+.param l=0.75
+.param w=0.5
+
+"}

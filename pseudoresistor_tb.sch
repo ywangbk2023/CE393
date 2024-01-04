@@ -50,3 +50,26 @@ C {devices/vsource.sym} 190 -110 0 0 {name=V1 value=1.8 savecurrent=true
 }
 C {devices/ammeter.sym} 250 -170 3 0 {name=Vr1
 }
+C {devices/code.sym} 130 -530 0 0 {name=TT_MODELS1
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
+
+.control
+	
+	dc V2 0 1 0.0001
+	plot i(V2)
+	
+
+.endc
+.save all
+"
+spice_ignore=false}
+C {devices/code_shown.sym} 110 -340 0 0 {name=s1 only_toplevel=false value="
+.param l=0.35
+.param w=1
+
+"}
